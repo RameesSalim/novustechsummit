@@ -68,7 +68,8 @@
 
     <link href="assets/carousel/owl.carousel.min.css" rel="stylesheet" />
     <link href="assets/carousel/owl.theme.default.min.css" rel="stylesheet" />
-
+	
+<link rel="shortcut icon" href="assets/favicon.png" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -120,7 +121,7 @@
         </nav>
 
 
-        <section id="intro" class="intro-2" data-parallax="scroll" data-image-src="assets/images/novis/web31.jpg">
+        <section id="intro" class="intro-2" data-parallax="scroll" data-image-src="assets/images/novis/web31b.jpg">
 
             <div class="content" id="mouse-parallax">
                 <div class="container">
@@ -200,6 +201,9 @@
                     <a href="index.html#events" class="btn btn-home scroll-reveal">Events</a>
 
                     <a href="events/workshops.html" class="btn btn-home scroll-reveal" style="color:#000;background:#fff;">REGISTER</a>
+					<p class="scroll-reveal" style="text-align: right">In Association With:<br>
+						<img src="assets/images/makervillage.png" width="10%">&emsp;<img src="assets/images/startup.png" width="10%">&emsp;<img src="assets/images/Startindia.png" width="10%">&emsp;<img src="assets/images/skillindia.png" width="10%">&emsp;<img src="assets/images/startupvillage.png" width="10%">
+					</p>
                 </div>
                 <!-- /.container -->
             </div>
@@ -270,18 +274,30 @@
 					<div class="container">
 
 						<h2 class="scroll-reveal">EVENTS</h2>
-
-						<div class="events-list">
-							<div class="owl-carousel">
-
+						
+						<div id="eventsCarousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#eventsCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#eventsCarousel" data-slide-to="1"></li>
+								<li data-target="#eventsCarousel" data-slide-to="2"></li>
+								<li data-target="#eventsCarousel" data-slide-to="3"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="assets/images/tiesummit.jpg" width="100%" alt="Image Load Error">
+									</div>
+								</div>
+							
+							<a class="left carousel-control" href="#eventsCarousel" data-slide="prev">
+								<span class="glyphicon glyphicon-arrow-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#eventsCarousel" data-slide="next">
+								<span class="glyphicon glyphicon-arrow-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
 							</div>
-						</div>
-						<div class="events-brief">
-							<span class="title">TITLE</span>
-							<span class="brief">Small Description</span>
-							<span class="html"><a href="#">EXPLORE</a></span>
-						</div>
-
+							
 					</div>
 				</section>
                 <!-- /#news -->
@@ -325,7 +341,8 @@
 								<p class="subtitle scroll-reveal">Competitions and Tech Expo</p>
 								<p class="scroll-reveal">
 								Abhilash KM<br>
-								Ignatious<br></p>
+								Ignatious<br>
+								Krishnadas C.S. <br></p>
 								<p class="subtitle scroll-reveal">Our Partners</p>
 								<p class="scroll-reveal">
 									<img src="assets/images/1113.png" height="10%" width="10%">&emsp;<img src="assets/images/genesis.png" width="10%" height="10%">&emsp;<img src="assets/images/drk.png" height="10%" width="10%">&emsp;<img src="assets/images/drone.png" height="10%" width="10%">&emsp;<img src="assets/images/protrex.png" height="10%" width="10%">
@@ -437,14 +454,14 @@
                 <div class="row">
                     <div class="col-md-8">
                         <ul class="list-inline list-unstyled ">
-                            <li><a href="index.html#intro">Home</a>
+                            <li><a href="#intro">Home</a>
                             </li>
 
-                            <li><a href="index.html#events">Events</a>
+                            <li><a href="#events">Events</a>
                             </li>
-                            <li><a href="index.html#about">About</a>
+                            <li><a href="#about">About</a>
                             </li>
-                            <li><a href="index.html#contact">Contact</a>
+                            <li><a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
