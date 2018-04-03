@@ -83,7 +83,7 @@ header.major {
 
 			ul.icons li a {
 				display: inline-block;
-				color: #828282;
+				color:#FFFFFF;
 				width: 30px;
 				height: 30px;
 				text-align: center;
@@ -235,7 +235,7 @@ header.major {
 			display: block;
 			width: 100%;
 			height: auto;
-			background: #111111;
+			background: #2A0025;
 			position: absolute;
 			left: 100%;
 			top: 55px;
@@ -270,7 +270,6 @@ header.major {
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-		overflow-x: hidden;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -330,7 +329,7 @@ header.major {
 	}
 
 	body {
-		background: #202024;
+		background:#1B0018;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -796,7 +795,7 @@ header.major {
 	.box {
 		border-radius: 4px;
 		margin-bottom: 2em;
-		background: #2c2c32;
+		background: #140011;
 		text-align: center;
 	}
 
@@ -1588,6 +1587,8 @@ header.major {
 			opacity: 1;
 		}
 
+
+
 #banner2 {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -1769,6 +1770,187 @@ header.major {
 			opacity: 1;
 		}
 
+#banner3 {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		padding: 8em 4em 6em 4em;
+		min-height: 70vh;
+		background-image: url("../../eventcopy.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		border-top: 0;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+
+		#banner3 .inner {
+			text-align: center;
+			position: relative;
+			z-index: 2;
+		}
+
+		#banner3 h1 {
+			color: #fff;
+			font-size: 5em;
+			font-weight: 400;
+			font-family: 'Passion One', cursive;
+			margin: 0;
+		}
+
+			@media screen and (max-width: 980px) {
+
+				#banner3 h1 {
+					font-size: 5em;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#banner3 h1 {
+					font-size: 3em;
+				}
+
+			}
+
+		#banner3 p {
+			color: rgba(255, 255, 255, 0.85);
+			font-size: 1.5em;
+			font-weight: 300;
+		}
+
+			@media screen and (max-width: 980px) {
+
+				#banner3 p {
+					font-size: 1.5em;
+				}
+
+			}
+
+			@media screen and (max-width: 480px) {
+
+				#banner3 p {
+					font-size: 1.25em;
+				}
+
+			}
+
+		#banner3 a {
+			color: rgba(255, 255, 255, 0.75);
+			text-decoration: none;
+			border-bottom: 1px dotted;
+		}
+
+			#banner3 a:hover {
+				color: #FFF;
+				border: none;
+			}
+
+		#banner3 .more {
+			background-image: url("images/arrow.svg");
+			background-position: center 1.35em;
+			background-repeat: no-repeat;
+			background-size: auto;
+			border: 1px solid #fff;
+			border-radius: 100%;
+			color: rgba(255, 255, 255, 0.75);
+			display: block;
+			height: 4em;
+			text-indent: 4em;
+			overflow: hidden;
+			white-space: nowrap;
+			width: 4em;
+			z-index: 2;
+			margin: 0 auto 2em auto;
+		}
+
+			#banner3 .more:hover {
+				background-color: rgba(255, 255, 255, 0.05);
+				border: 1px solid #fff;
+				color: #FFF;
+			}
+
+		#banner3 video {
+			-moz-transform: translateX(50%) translateY(50%);
+			-webkit-transform: translateX(50%) translateY(50%);
+			-ms-transform: translateX(50%) translateY(50%);
+			transform: translateX(50%) translateY(50%);
+			position: absolute;
+			bottom: 50%;
+			right: 50%;
+			width: auto;
+			height: auto;
+			min-width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+
+		#banner3:before {
+			-moz-transition: opacity 3s ease;
+			-webkit-transition: opacity 3s ease;
+			-ms-transition: opacity 3s ease;
+			transition: opacity 3s ease;
+			-moz-transition-delay: 1s;
+			-webkit-transition-delay: 1s;
+			-ms-transition-delay: 1s;
+			transition-delay: 1s;
+			content: '';
+			background-color: #42424f;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.45;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner3 video {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner3 br {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner3 {
+				min-height: 0;
+				padding: 6em 2em 4em 2em;
+			}
+
+				#banner3 br {
+					display: none;
+				}
+
+		}
+
+		body.is-loading #banner3:before {
+			opacity: 1;
+		}
+
 /* Main */
 
 	#main {
@@ -1841,3 +2023,4 @@ header.major {
 			}
 
 		}
+
